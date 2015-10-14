@@ -34,7 +34,9 @@
                 var header, article, sections, spanTemp, mkSpan;
                 mkSpan = function(className) { spanTemp = document.createElement('span'); spanTemp.className = className;};
                 data = data['Max Rafferty']; //Ugly, but strangely appealing to the ego
-                header = document.createElement('header');
+                header = document.getElementsByClassName('header')[0];
+                document.getElementsByClassName('fallback')[0].style.display = 'none';
+                header.style.display = 'block';
                 mkSpan('name');
                 header.appendChild(spanTemp);
                 insertNode('name', 'Max P. Rafferty', header); //Come now, object keys is overkill
@@ -50,6 +52,11 @@
                 insertNode('sweater', header);
             };
         </script>
+        <style>
+            .header {
+                display: none;
+            }
+        </style>
     </head>
     <body>
         <iframe class="fallback" frameborder="0" src="https://cdn.rawgit.com/MaxPRafferty/Resume/master/resume.txt" style="
@@ -61,13 +68,29 @@
             right: 0;
             height: 100%;
             overflow: hidden;
-        "/>
+        "></iframe>
         <div class="sweater">a
             <header class="header">
                 <span class="name" />
-                <span class="contact" />
+                <span class="contact" >
+                    <span class='email' />
+                    <span class='phone' />
+                    <span class='address' />
+                    <span class='gh' />
+                    <span class='li' />
+                    <span class='so' />
+                </span>
             </header>
             <article class="resume">
+                <section>
+                    <h2 class="section-title" />
+                    <div class="section-body">
+                        <div class="item"> 
+                            <h3 class="item-title" />
+                            <div class="item-description" />
+                        </div>
+                    </div>
+                </section>
             </article>
         </div>
     </body>
