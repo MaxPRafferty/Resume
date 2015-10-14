@@ -1,0 +1,60 @@
+ { "Max Rafferty": {
+    Synopsis: "Language and stack agnostic software engineer, specializing in web interaction. Proven professional experience in front-end stack architecture, cutting-edge best-practice web development, mobile-first responsive UX, and developer advocacy and traning",
+    Education: {
+        "Summer Coursework, Harvard University": "Studied Algorithms and Data Structures under Dr. Michael D. Mitzenmacher. Coursework completed 2008",
+        "Bachelor of Arts, College of Wooster": {
+            Major: "Computer Science",
+            Minor: "Studio Art",
+            Accomplishments: "Senior thesis passed with honors, published as M. Rafferty and S. Visa, BitTorrent-Enhanced Distributed Internet Caching (BEDIC) in Proceedings of the 2010  Midstates Conference for Undergraduate Research in Computer Science and Mathematics, Springfield, 2010, pp 49-57."
+        }
+    },
+    Publications: [
+        "M. Rafferty and S. Visa, BitTorrent-Enhanced Distributed Internet Caching (BEDIC) in Proceedings of the 2010 Midstates Conference for Undergraduate Research in Computer Science and Mathematics, Springfield, 2010, pp 49-57."
+    ],
+    Experience: {
+        Nomi: {
+            Position: "Engineer",
+            Description: "Member of frontend engineering team responsible for architecture, program design, development, and maintenance of client-facing SAAS application interfaces. Personally worked to select and implement the stack for a full, grond-up SPA in HTML5, SCSS, and ES6 Javascript, with Unix and Node build tools. Select technologies include React, Flux, Babel, Mocha, and Gulp.",
+            Dates: "April 2014 - October·2015",
+            Location: "New York, NY"
+        },
+        "NorthPoint Digital": {
+            Position: "Consultant",
+            Description: "Stack agnostic web development and consultancy. Focus on direct client interaction and responsive, high-performance enterprise development. Technologies include Javascript, C#, PHP, Microsoft .NET, Apache, Solr, Drupal, Ektron, and Sitecore. Notable projects included sites for MIT Sloan Business School (mitsloan.mit.edu) and CHKD hospital (chkd.org).",
+            Dates: "October 2012 - April 2014",
+            Location: "New York, NY"
+        },
+        "Hearts on Fire": {
+            Position: "Engineer",
+            Description: "C# + Sitecore development for HeartsOnFire.com. Responsibilities included AJAX forms, Sitecore Templates, Microsoft Dynamics and social network (Facebook et al.) integration, and migrated Visual Source Save store into SVN.",
+            Dates: "August 2012 - October 2012",
+            Location: "Boston, MA"
+        },
+        "Ektron, Inc.": {
+            Position: "Engineer",
+            Description: "Responsible for full-stack implementation and maintenence of client sites built on Ektron CMS. Additionaly, delivered  on-site and remote developer training sessions on Ektron's products and APIs. Technologies included C#, PHP, Javascript, and Ektron. Notable projects included Kodak.com and Covidien.com",
+            Dates: "February 2011 - August 2012",
+            Location: "Nashua, NH"
+        },
+        "River Cardroom": {
+            Position: "Poker Dealer",
+            Description: "Dealt tournament and cash Texas Hold'em, as well as a variety of other table games. Additionally maintained cardroom website and weekly marketing email, and created media for mailers, pamphlets, and billboards",
+            Dates: "May 2010 - February 2011",
+            Location: "Milford, NH"
+        },
+        "College of Wooster": {
+            Position: "Web Manager",
+            Description: "Oversaw student content assistant team responsible for migrating existing static HTML site into Sitecore CMS.",
+            Dates: "November 2007 - May 2010",
+            Location: "Wooster, OH"
+        }
+    },
+    Contact: {
+        Email: "MaxPRafferty@gmail.com",
+        Phone: "617-480-3820",
+        Address: "226 New York Ave., Apt 2, Brooklyn NY, 11216",
+        Github: "https://github.com/MaxPRafferty",
+        Linkedin: "https://www.linkedin.com/in/maxprafferty",
+        StackOverflow: "http://stackoverflow.com/users/1612869/maxprafferty"
+    }
+ }}
