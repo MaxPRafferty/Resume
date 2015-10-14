@@ -3,7 +3,7 @@
         <title>Max P. Rafferty: Resume</title>
         <script>
             /** @constant {string}*/ var resumeData = 'https://raw.githubusercontent.com/MaxPRafferty/Resume/master/resume.txt';
-            var setupPage, insertNode;
+            var setupPage, insertNode, addNode;
             (function() {
                 var xmlHttp = new XMLHttpRequest();
                 xmlHttp.onreadystatechange = function() { 
@@ -28,28 +28,55 @@
                 classNode.appendChild(node);
             };
             /**
+             * creates a new node inside a specified parent
+             * @param {string} className
+             * @param {string} content
+             * @param {object} parent dom node to insert into
+             * @param {string} [type=span] The html element type to create
+             */
+            addNode = function (className, content, parent, type) {
+                var node, text;
+                type = type || 'span';
+                node = document.createElement(type);
+                node.className = className;
+                text = document.createTextNode(content);
+                node.appendChild(text);
+                parent.appendChild(node);
+            };
+            /**
              * hides fallback iframe, inserts resume text
              */
             setupPage = function (data) {
-                var header, article, sections, spanTemp, mkSpan;
-                mkSpan = function(className) { spanTemp = document.createElement('span'); spanTemp.className = className;};
+                var header, article, sections, section, workingNode;
                 data = data['Max Rafferty']; //Ugly, but strangely appealing to the ego
                 header = document.getElementsByClassName('header')[0];
                 document.getElementsByClassName('fallback')[0].style.display = 'none';
                 header.style.display = 'block';
-                mkSpan('name');
-                header.appendChild(spanTemp);
-                insertNode('name', 'Max P. Rafferty', header); //Come now, object keys is overkill
-                mkSpan('contact');
-                header.appendChild(spanTemp);
-                insertNode('contact', data.Contact.Email, header);
-                insertNode('contact', data.Contact.Phone, header);
-                insertNode('contact', data.Contact.Address, header);
-                insertNode('contact', data.Contact.Github, header);
-                insertNode('contact', data.Contact.Linkedin, header);
-                insertNode('contact', data.Contact.StackOverflow, header);
 
-                insertNode('sweater', header);
+                insertNode('name', 'Max P. Rafferty', header); //Come now, object keys is overkill
+                insertNode('synopsis', data.Synopsis, header);
+                insertNode('email', data.Contact.Email, header);
+                insertNode('phone', data.Contact.Phone, header);
+                insertNode('address', data.Contact.Address, header);
+                insertNode('gh', data.Contact.Github, header);
+                insertNode('li', data.Contact.Linkedin, header);
+                insertNode('so', data.Contact.StackOverflow, header);
+
+                sections = {};
+                sections.experience = document.getElementsByClassName('section')[0].cloneNode(true);
+                sections.education = sections.experience.cloneNode(true);
+                sections.publications = sections.experience.cloneNode(true);
+                section = sections.experience.getElementsByClassName('item')[0].cloneNode(true);
+                for(key in data.Experience) {
+                  workingNode = section.cloneNode(true);
+                  insertNode('item-title', key, workingNode);
+                  addNode('position', data.Experience[key].Position, workingNode.getElementsByClassName('item-header')[0]);
+                  addNode('location', data.Experience[key].Location, workingNode.getElementsByClassName('item-header')[0]);
+                  addNode('dates', data.Experience[key].Dates, workingNode.getElementsByClassName('item-header')[0]);
+                  insertNode('item-description', data.Experience[key].Description, workingNode);
+                  insertNode('section-body', workingNode, sections.experience);;
+                }
+                insertNode('resume', sections.experience);
             };
         </script>
         <style>
@@ -71,23 +98,26 @@
         "></iframe>
         <div class="sweater">a
             <header class="header">
-                <span class="name" />
-                <span class="contact" >
-                    <span class='email' />
-                    <span class='phone' />
-                    <span class='address' />
-                    <span class='gh' />
-                    <span class='li' />
-                    <span class='so' />
+                <h1 class="name"></h1>
+                <span class="synopsis"></span>
+                <span class="contact">
+                    <span class='email'></span>
+                    <span class='phone'></span>
+                    <span class='address'></span>
+                    <span class='gh'></span>
+                    <span class='li'></span>
+                    <span class='so'></span>
                 </span>
             </header>
             <article class="resume">
-                <section>
-                    <h2 class="section-title" />
+                <section class="section">
+                    <h2 class="section-title"></h2>
                     <div class="section-body">
                         <div class="item"> 
-                            <h3 class="item-title" />
-                            <div class="item-description" />
+                            <header class="item-header">
+                                <h3 class="item-title"></h3>
+                            </header>
+                            <div class="item-description"></div>
                         </div>
                     </div>
                 </section>
