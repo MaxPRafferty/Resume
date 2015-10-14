@@ -31,11 +31,10 @@
              * hides fallback iframe, inserts resume text
              */
             setupPage = function (data) {
-                var header, article, sections, spanTemp, mkSpan,  _a_ce;
-                _a_ce = document.createElement;
-                mkSpan = function(class) { spanTemp = _a_ce('span'); spanTemp.className = class;};
+                var header, article, sections, spanTemp, mkSpan;
+                mkSpan = function(className) { spanTemp = document.createElement('span'); spanTemp.className = className;};
                 data = data['Max Rafferty']; //Ugly, but strangely appealing to the ego
-                header = _a_ce('header');
+                header = document.createElement('header');
                 mkSpan('name');
                 header.appendChild(spanTemp);
                 insertNode('name', 'Max P. Rafferty', header); //Come now, object keys is overkill
