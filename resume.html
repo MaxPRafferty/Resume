@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Max P. Rafferty: Resume</title>
+        <script>
+            /** @constant {string}*/ var resumeData = 'https://raw.githubusercontent.com/MaxPRafferty/Resume/master/resume.txt';
+            var setupPage, setTextNode;
+            (function() {
+                var xmlHttp = new XMLHttpRequest();
+                xmlHttp.onreadystatechange = function() { 
+                    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                        setupPage(JSON.parse(xmlHttp.responseText));
+                    }
+                }
+                xmlHttp.open("GET", 'https://raw.githubusercontent.com/MaxPRafferty/Resume/master/resume.txt', true); // true for asynchronous 
+                xmlHttp.send(null);
+            })();
+            /**
+             * Inserts specified text into the first node with a given class
+             * @param {string} className class to insert text into
+             * @param {string} text text to insert
+             */
+            setTextNode = function(className, text) {
+                var classNode = document.getElementsByClassName(className)[0];
+                var textNode = document.createTextNode(text);
+                classNode.appendChild(textNode);
+            };
+            /**
+             * hides fallback iframe, inserts resume text
+             */
+            setupPage = function () {
+                
+            };
+        </script>
+    </head>
+    <body>
+        <iframe src="https://cdn.rawgit.com/MaxPRafferty/Resume/master/resume.txt" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            right: 0;
+        "/>
+    </body>
+</html>
