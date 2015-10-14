@@ -51,7 +51,7 @@
                 data = data['Max Rafferty']; //Ugly, but strangely appealing to the ego
                 header = document.getElementsByClassName('header')[0];
                 document.getElementsByClassName('fallback')[0].style.display = 'none';
-                header.style.display = 'block';
+                header.style.display = 'inline';
 
                 insertNode('name', 'Max P. Rafferty', header); //Come now, object keys is overkill
                 insertNode('synopsis', data.Synopsis, header);
@@ -77,12 +77,33 @@
                   insertNode('section-body', workingNode, sections.experience);;
                 }
                 insertNode('resume', sections.experience);
+                insertNode('section-title', 'Experience', sections.experience);
+
+                for(key in data.Education) {
+                  workingNode = section.cloneNode(true);
+                  insertNode('item-title', key, workingNode);
+                  if (typeof data.Education[key] === 'string') {
+                    insertNode('item-description', data.Education[key], workingNode)
+                  } else {
+                    addNode('major', 'Major: ' + data.Education[key].Major, workingNode.getElementsByClassName('item-header')[0]);
+                    addNode('minor', 'Minor: ' + data.Education[key].Minor, workingNode.getElementsByClassName('item-header')[0]);
+                    insertNode('item-description', data.Education[key].Accomplishments, workingNode);
+                  }
+                  insertNode('section-body', workingNode, sections.education);
+                }
+                insertNode('resume', sections.education);
+                insertNode('section-title', 'Education', sections.education);
             };
         </script>
         <style>
             .header {
                 display: none;
+                float: right;
+                width: 250px;
+                padding-right: 15px;
             }
+
+            
         </style>
     </head>
     <body>
@@ -96,18 +117,18 @@
             height: 100%;
             overflow: hidden;
         "></iframe>
-        <div class="sweater">a
+        <div class="sweater">
             <header class="header">
                 <h1 class="name"></h1>
-                <span class="synopsis"></span>
-                <span class="contact">
-                    <span class='email'></span>
-                    <span class='phone'></span>
-                    <span class='address'></span>
-                    <span class='gh'></span>
-                    <span class='li'></span>
-                    <span class='so'></span>
-                </span>
+                <p class="synopsis"></p>
+                <ul class="contact">
+                    <li class='email'></li>
+                    <li class='phone'></li>
+                    <li class='address'></li>
+                    <li class='gh'></li>
+                    <li class='li'></li>
+                    <li class='so'></li>
+                </ul>
             </header>
             <article class="resume">
                 <section class="section">
