@@ -68,10 +68,20 @@
 
                 sections = {};
                 sections.experience = document.getElementsByClassName('section')[0].cloneNode(true);
+                section = sections.experience.getElementsByClassName('item')[0].cloneNode(true);
+                sections.experience.getElementsByClassName('section-body')[0].removeChild(sections.experience.getElementsByClassName('item')[0]);
                 sections.education = sections.experience.cloneNode(true);
                 sections.publications = sections.experience.cloneNode(true);
+                sections.skills  = sections.experience.cloneNode(true);
                 document.getElementsByClassName('resume')[0].removeChild(document.getElementsByClassName('section')[0]);
-                section = sections.experience.getElementsByClassName('item')[0].cloneNode(true);
+
+/*
+  .--.      .-'.      .--.      .--.      .--.      .--.      .`-.      .--.
+  :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+  '      `--'      `.-'      `--'      `--'      `--'      `-.'      `--'      `
+  **EXPERIENCE**
+*/
+
                 for(key in data.Experience) {
                   workingNode = section.cloneNode(true);
                   insertNode('item-title', key, workingNode);
@@ -80,10 +90,17 @@
                   addNode('dates', data.Experience[key].Dates, workingNode.getElementsByClassName('item-header')[0]);
                   insertNode('item-description', data.Experience[key].Description, workingNode);
                   insertNode('section-body', workingNode, sections.experience);;
+                  
                 }
                 insertNode('resume', sections.experience);
                 insertNode('section-title', 'Experience', sections.experience);
 
+/*
+  .--.      .-'.      .--.      .--.      .--.      .--.      .`-.      .--.
+  :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+  '      `--'      `.-'      `--'      `--'      `--'      `-.'      `--'      `
+  **EDUCATION**
+*/
                 for(key in data.Education) {
                   workingNode = section.cloneNode(true);
                   insertNode('item-title', key, workingNode);
@@ -98,6 +115,22 @@
                 }
                 insertNode('resume', sections.education);
                 insertNode('section-title', 'Education', sections.education);
+
+/*
+  .--.      .-'.      .--.      .--.      .--.      .--.      .`-.      .--.
+  :::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+  '      `--'      `.-'      `--'      `--'      `--'      `-.'      `--'      `
+  **SKILLS**
+*/
+                for(key in data.Skills) {
+                    workingNode = section.cloneNode(true);
+                    insertNode('item-title', key, workingNode);
+                    insertNode('item-description', data.Skills[key], workingNode);
+                    insertNode('section-body', workingNode, sections.skills);
+                }
+                sections.skills.className += ' skills'
+                insertNode('resume', sections.skills);
+                insertNode('section-title', 'Skills', sections.skills);
             };
         </script>
         <!--Primary Styles -->
@@ -165,6 +198,30 @@
             .major {
                 display: block;
                 font-weight: 500;
+            }
+
+            .skills .item {
+                position: relative;
+                margin-bottom: 15px;
+            }
+
+            .skills .item-header {
+                width: 20%;
+                display: inline-block;
+                vertical-align: top;
+                margin: 0;
+                padding: 0;
+            }
+
+            .skills .item-title {
+                margin: 0;
+                font-weight: 500;
+            }
+
+            .skills .item-description {
+                width: 77%;
+                display: inline-block;
+                margin-left: 10px;
             }
 
             .gh {
