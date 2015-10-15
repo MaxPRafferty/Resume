@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Max P. Rafferty: Resume</title>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:100,400,700' rel='stylesheet' type='text/css'>
         <script>
             /** @constant {string}*/ var resumeData = 'https://raw.githubusercontent.com/MaxPRafferty/Resume/master/resume.txt';
             var setupPage, insertNode, addNode;
@@ -58,9 +59,12 @@
                 insertNode('email', data.Contact.Email, header);
                 insertNode('phone', data.Contact.Phone, header);
                 insertNode('address', data.Contact.Address, header);
-                insertNode('gh', data.Contact.Github, header);
-                insertNode('li', data.Contact.Linkedin, header);
-                insertNode('so', data.Contact.StackOverflow, header);
+                addNode('social-link', data.Contact.Github.split('.com')[1],  header.getElementsByClassName('gh')[0], 'a');
+                addNode('social-link', data.Contact.Linkedin.split('.com')[1],  header.getElementsByClassName('li')[0], 'a');
+                addNode('social-link', data.Contact.StackOverflow.split('.com')[1],  header.getElementsByClassName('so')[0], 'a');
+                header.getElementsByClassName('gh')[0].getElementsByClassName('social-link')[0].href = data.Contact.Github;
+                header.getElementsByClassName('li')[0].getElementsByClassName('social-link')[0].href = data.Contact.Linkedin;
+                header.getElementsByClassName('so')[0].getElementsByClassName('social-link')[0].href = data.Contact.StackOverflow;
 
                 sections = {};
                 sections.experience = document.getElementsByClassName('section')[0].cloneNode(true);
@@ -95,10 +99,31 @@
                 insertNode('section-title', 'Education', sections.education);
             };
         </script>
+        <!--Primary Styles -->
         <style>
             .sweater {
+                max-width: 670px; /*approximate fallback for browsers not supporting inches*/
                 max-width: 8.5in;
+                margin: 0;
+                padding: 0;
                 float: right;
+                font-family: 'Raleway', 'Helvetica Neue', helvetica, Arial, sans-serif;
+                font-weight: 400;
+                line-height: 1.13em;
+            }
+
+            h1 {
+                font-family: 'Raleway', 'Helvetica Neue', helvetica, Arial, sans-serif;
+                font-weight: 100;
+            }
+
+            h2 {
+                text-decoration: underline;
+            }
+
+            h2, h3 {
+                font-weight: 700;
+                margin-bottom: 10px;
             }
 
             .header {
@@ -110,8 +135,14 @@
                 margin: -8px -7px 0 10px;
             }
 
+            .contact {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
             .position {
-                font-weight: bold;
+                font-weight: 700;
                 margin-right: 5px;
             }
 
@@ -126,8 +157,46 @@
 
             .major {
                 display: block;
-                font-weight: bold;
+                font-weight: 700;
             }
+
+            .gh {
+                
+            }
+
+            @media only screen and (max-width: 640px) {
+                .header {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    float: left;
+                    margin-left: -9px;
+                }
+            }
+
+            @media print {
+                .header {
+                    background-color: white;
+                    border: 1px solid #ddd;
+                }
+
+                .name {
+                    background-color: white;
+                    color: black;
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+        </style>
+        <!-- disableable styles -->
+        <style>
+            .name {
+               background-color: #385E0F;
+               color: #EEE9E9;
+               padding: 15px;
+               margin: 0 -15px 0 -14px;
+               font-size: 36px;
+            }
+
+            
         </style>
     </head>
     <body>
