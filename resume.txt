@@ -56,5 +56,15 @@
         "Github": "https://github.com/MaxPRafferty",
         "Linkedin": "https://www.linkedin.com/in/maxprafferty",
         "StackOverflow": "http://stackoverflow.com/users/1612869/maxprafferty"
-    }
+    },
+    "Skills": {
+        "Environments": "Server administration in Windows and Unix. Comfortable in all desktop environments",
+        "Languages": "Master level Javascript (es5, es2015 (formerly es6)). Professional experience in C#, Visual Basic, PHP, and Python. Hobby experience in C++, Lisp, Go, Ruby, and coffeescript. Educated in C, Java, and Basic",
+        "Tools": "Comfortable with standard Unix tools. Frontend Tools include Gulp, Grunt, Babel, SCSS, LESS, Browserify, Webpack, Google Closure, ESLint, Intern, Jest, Mocha, and  Chai, All via Node. Comfortable working in virtualized environments, and in Unix containers (Docker). Comfortable working within and configuring CI and build automation (circleCI, Jenkins, Solano, Travis)",
+        "VCS": "Strongly prefer Git and GitHub. Experience with SVN, Team Foundation, and VSS",
+        "Frameworks": "Strongly prefer React. Professional experience with Angular, Durandal (Knokout), and Backbone. Eagerly await the day IE9 is no longer a requirement so that Polymer can be on this list.",
+        "Libraries": "Strongly prefer Lodash (Underscore) for nearly any project. Very familiar with JQuery (though you might not need it!). Comfortable with Bootstrap and Foundation.",
+        "Issue-Tracking": "Very comfortable in JIRA, and working with JIRA Agile tools. Experience with Pivitol, GitHub Issues, TFS, and Trello"
+
+    } 
  }}
