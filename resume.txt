@@ -14,8 +14,8 @@
     "Experience": {
         "Nomi": {
             "Position": "Engineer",
-            "Description": "Member of frontend engineering team responsible for stack architecture, program design, development, and maintenance of client-facing SAAS application interfaces. Personally worked to select and implement the frontend tech stack for a full, ground-up SPA in HTML5, SCSS, and ES6 Javascript, with Unix and Node build tools. Select technologies include React, Flux, Babel, Mocha, and Gulp.",
-            "Dates": "April 2014 - October·2015",
+            "Description": "Member of frontend engineering team responsible for stack architecture, program design, development, and maintenance of client-facing SAAS application interfaces. Personally worked to select and implement the frontend tech stack for a full, ground-up SPA in HTML5, SCSS, and ES2015 Javascript, with Unix and Node build tools. Select technologies include React, Flux, Babel, Mocha, and Gulp.",
+            "Dates": "April 2014 - October 2015",
             "Location": "New York, NY"
         },
         "NorthPoint Digital": {
@@ -59,7 +59,7 @@
     },
     "Skills": {
         "Environments": "Server administration in Windows and Unix. Comfortable in all desktop environments",
-        "Languages": "Master level Javascript (es5, es2015 (formerly es6)). Professional experience in C#, Visual Basic, PHP, and Python. Hobby experience in C++, Lisp, Go, Ruby, and coffeescript. Educated in C, Java, and Basic",
+        "Languages": "Master level Javascript (ES5, ES2015 (formerly ES6)). Professional experience in C#, Visual Basic, PHP, and Python. Hobby experience in C++, Lisp, Go, Ruby, and coffeescript. Educated in C, Java, and Basic",
         "Tools": "Comfortable with standard Unix tools. Frontend Tools include Gulp, Grunt, Babel, SCSS, LESS, Browserify, Webpack, Google Closure, ESLint, Intern, Jest, Mocha, and  Chai, All via Node. Comfortable working in virtualized environments, and in Unix containers (Docker). Comfortable working within and configuring CI and build automation (circleCI, Jenkins, Solano, Travis)",
         "VCS": "Strongly prefer Git and GitHub. Experience with SVN, Team Foundation, and VSS",
         "Frameworks": "Strongly prefer React. Professional experience with Angular, Durandal (Knokout), and Backbone. Eagerly await the day IE9 is no longer a requirement so that Polymer can be on this list.",
