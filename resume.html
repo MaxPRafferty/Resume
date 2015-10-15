@@ -135,15 +135,21 @@
         </script>
         <!--Primary Styles -->
         <style>
+            body {
+                background-color: #EEE9E9;
+            }
+
             .sweater {
                 max-width: 670px; /*approximate fallback for browsers not supporting inches*/
                 max-width: 8.5in;
                 margin: 0;
                 padding: 0;
-                float: right;
                 font-family: 'Raleway', 'Helvetica Neue', helvetica, Arial, sans-serif;
                 font-weight: 400;
                 line-height: 1.13em;
+                left: 50%;
+                position: relative;
+                transform: translateX(-50%);
             }
 
             h1 {
@@ -154,12 +160,23 @@
             h2 {
                 background-color: #EEE9E9;
                 margin-left: -20px;
-                padding: 10px 20px;
+                padding: 11px 20px;
             }
 
             h2, h3 {
                 font-weight: 400;
                 margin-bottom: 10px;
+            }
+
+            .share {
+                position: fixed;
+                background-color: lavender;
+                bottom: 0;
+                right: 0;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                padding: 5px;
+                z-index: 1;
             }
 
             .header {
@@ -179,6 +196,11 @@
 
             .resume {
                 padding-left: 10px;
+                background-color: white;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-bottom: 15px;
+                margin-bottom: 30px;
             }
 
             .position {
@@ -248,12 +270,24 @@
                     float: left;
                     margin-left: -9px;
                 }
+
+                .share {
+                    display: none;
+                }
             }
 
             @media print {
+                body {
+                    background-color: white;
+                }
+
                 .resume {
                     margin-top: -10px;
                     overflow: visible;
+                }
+
+                .share {
+                    display: none;
                 }
 
                 html .header {
@@ -299,6 +333,13 @@
             height: 100%;
             overflow: hidden;
         "></iframe>
+        <div class="share">
+            Download: 
+            <a href="https://cdn.rawgit.com/MaxPRafferty/Resume/master/media/Resume-Max-Rafferty.rtf">.rtf</a>
+            <a href="https://cdn.rawgit.com/MaxPRafferty/Resume/master/media/Resume-Max-Rafferty.doc">.doc (plain text)</a>
+            <a href="https://cdn.rawgit.com/MaxPRafferty/Resume/master/media/Resume-Max-Rafferty-Plain.pdf">.pdf</a>
+            <a href="https://cdn.rawgit.com/MaxPRafferty/Resume/master/media/Resume-Max-Rafferty.pdf">.pdf (formatted)</a>
+        </div>
         <div class="sweater">
             <header class="header">
                 <h1 class="name"></h1>
