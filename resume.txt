@@ -32,7 +32,7 @@
         },
         "Ektron, Inc.": {
             "Position": "Engineer",
-            "Description": "Responsible for full-stack implementation and maintenence of client sites built on Ektron CMS. Additionaly, delivered  on-site and remote developer training sessions on Ektron's products and APIs. Technologies included C#, PHP, Javascript, and Ektron. Notable projects included Kodak.com and Covidien.com",
+            "Description": "Responsible for full-stack implementation and maintenance of client sites built on Ektron CMS. Additionally, delivered  on-site and remote developer training sessions on Ektron's products and APIs. Technologies included C#, PHP, Javascript, and Ektron. Notable projects included Kodak.com and Covidien.com",
             "Dates": "February 2011 - August 2012",
             "Location": "Nashua, NH"
         },
