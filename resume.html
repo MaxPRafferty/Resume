@@ -8,8 +8,9 @@
             (function() {
                 var xmlHttp = new XMLHttpRequest();
                 xmlHttp.onreadystatechange = function() { 
-                    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                    if (window.contentLoaded !== true && xmlHttp.readyState == 4 && xmlHttp.status == 200) {
                         setupPage(JSON.parse(xmlHttp.responseText));
+                        window.contentLoaded = true;
                     }
                 }
                 xmlHttp.open("GET", 'https://raw.githubusercontent.com/MaxPRafferty/Resume/master/resume.txt', true); // true for asynchronous 
