@@ -64,7 +64,7 @@
         "VCS": "Strongly prefer Git and GitHub. Experience with SVN, Team Foundation, and VSS",
         "Frameworks": "Strongly prefer React. Professional experience with Angular, Durandal (Knokout), and Backbone. Eagerly await the day IE9 is no longer a requirement so that Polymer can be on this list.",
         "Libraries": "Strongly prefer Lodash (Underscore). Very familiar with JQuery (though you might not need it!). Comfortable with Bootstrap and Foundation.",
-        "Issue-Tracking": "Very comfortable in JIRA, and working with JIRA Agile tools. Experience with Pivitol, GitHub Issues, TFS, and Trello"
+        "Issue-Tracking": "Very comfortable in JIRA, and working with JIRA Agile tools. Experience with Pivotal, GitHub Issues, TFS, and Trello"
 
     } 
  }}
