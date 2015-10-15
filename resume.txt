@@ -1,11 +1,11 @@
  { "Max Rafferty": {
-    "Synopsis": "Language and stack agnostic software engineer, specializing in web interaction. Proven professional experience in front-end stack architecture, cutting-edge best-practice web development, mobile-first responsive UX, and developer advocacy and traning",
+    "Synopsis": "Language and stack agnostic software engineer, specializing in frontend technologies. Proven professional experience in front-end stack architecture, cutting-edge best-practice web development, mobile-first responsive UX, and developer advocacy and training",
     "Education": {
         "Summer Coursework, Harvard University": "Studied Algorithms and Data Structures under Dr. Michael D. Mitzenmacher. Coursework completed 2008",
         "Bachelor of Arts, College of Wooster": {
             "Major": "Computer Science",
             "Minor": "Studio Art",
-            "Accomplishments": "Senior thesis passed with honors, published as M. Rafferty and S. Visa, BitTorrent-Enhanced Distributed Internet Caching (BEDIC) in Proceedings of the 2010  Midstates Conference for Undergraduate Research in Computer Science and Mathematics, Springfield, 2010, pp 49-57."
+            "Accomplishments": "Attended 2006 - 2010. Senior thesis passed with honors, published as M. Rafferty and S. Visa, BitTorrent-Enhanced Distributed Internet Caching (BEDIC) in Proceedings of the 2010  Midstates Conference for Undergraduate Research in Computer Science and Mathematics, Springfield, 2010, pp 49-57."
         }
     },
     "Publications": [
@@ -14,7 +14,7 @@
     "Experience": {
         "Nomi": {
             "Position": "Engineer",
-            "Description": "Member of frontend engineering team responsible for architecture, program design, development, and maintenance of client-facing SAAS application interfaces. Personally worked to select and implement the stack for a full, grond-up SPA in HTML5, SCSS, and ES6 Javascript, with Unix and Node build tools. Select technologies include React, Flux, Babel, Mocha, and Gulp.",
+            "Description": "Member of frontend engineering team responsible for stack architecture, program design, development, and maintenance of client-facing SAAS application interfaces. Personally worked to select and implement the frontend tech stack for a full, ground-up SPA in HTML5, SCSS, and ES6 Javascript, with Unix and Node build tools. Select technologies include React, Flux, Babel, Mocha, and Gulp.",
             "Dates": "April 2014 - October·2015",
             "Location": "New York, NY"
         },

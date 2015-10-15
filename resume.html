@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Max P. Rafferty: Resume</title>
-        <link href='https://fonts.googleapis.com/css?family=Raleway:100,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:100,400,500' rel='stylesheet' type='text/css'>
         <script>
             /** @constant {string}*/ var resumeData = 'https://raw.githubusercontent.com/MaxPRafferty/Resume/master/resume.txt';
             var setupPage, insertNode, addNode;
@@ -59,9 +59,9 @@
                 insertNode('email', data.Contact.Email, header);
                 insertNode('phone', data.Contact.Phone, header);
                 insertNode('address', data.Contact.Address, header);
-                addNode('social-link', data.Contact.Github.split('.com')[1],  header.getElementsByClassName('gh')[0], 'a');
                 addNode('social-link', data.Contact.Linkedin.split('.com')[1],  header.getElementsByClassName('li')[0], 'a');
-                addNode('social-link', data.Contact.StackOverflow.split('.com')[1],  header.getElementsByClassName('so')[0], 'a');
+                addNode('social-link', data.Contact.Github.split('.com')[1],  header.getElementsByClassName('gh')[0], 'a');
+               addNode('social-link', data.Contact.StackOverflow.split('.com')[1],  header.getElementsByClassName('so')[0], 'a');
                 header.getElementsByClassName('gh')[0].getElementsByClassName('social-link')[0].href = data.Contact.Github;
                 header.getElementsByClassName('li')[0].getElementsByClassName('social-link')[0].href = data.Contact.Linkedin;
                 header.getElementsByClassName('so')[0].getElementsByClassName('social-link')[0].href = data.Contact.StackOverflow;
@@ -70,6 +70,7 @@
                 sections.experience = document.getElementsByClassName('section')[0].cloneNode(true);
                 sections.education = sections.experience.cloneNode(true);
                 sections.publications = sections.experience.cloneNode(true);
+                document.getElementsByClassName('resume')[0].removeChild(document.getElementsByClassName('section')[0]);
                 section = sections.experience.getElementsByClassName('item')[0].cloneNode(true);
                 for(key in data.Experience) {
                   workingNode = section.cloneNode(true);
@@ -115,14 +116,16 @@
             h1 {
                 font-family: 'Raleway', 'Helvetica Neue', helvetica, Arial, sans-serif;
                 font-weight: 100;
-            }
+            } 
 
             h2 {
-                text-decoration: underline;
+                background-color: #EEE9E9;
+                margin-left: -20px;
+                padding: 10px 20px;
             }
 
             h2, h3 {
-                font-weight: 700;
+                font-weight: 400;
                 margin-bottom: 10px;
             }
 
@@ -132,7 +135,7 @@
                 width: 250px;
                 padding: 0px 15px 10px 15px;
                 background-color: #EEE9E9;
-                margin: -8px -7px 0 10px;
+                margin: -8px -7px 5px 10px;
             }
 
             .contact {
@@ -141,8 +144,12 @@
                 list-style: none;
             }
 
+            .resume {
+                padding-left: 10px;
+            }
+
             .position {
-                font-weight: 700;
+                font-weight: 500;
                 margin-right: 5px;
             }
 
@@ -157,11 +164,25 @@
 
             .major {
                 display: block;
-                font-weight: 700;
+                font-weight: 500;
             }
 
             .gh {
-                
+                background-image: url('https://cdn.rawgit.com/MaxPRafferty/Resume/master/media/gh-icon.png');
+            }
+
+            .li {
+                background-image: url('https://cdn.rawgit.com/MaxPRafferty/Resume/master/media/li-icon.png');
+            }
+
+            .so {
+                background-image: url('https://cdn.rawgit.com/MaxPRafferty/Resume/master/media/so-icon.png');
+            }
+
+            .gh, .li, .so {
+                background-repeat: no-repeat;
+                background-size: 20px;
+                padding: 0 0 5px 27px;
             }
 
             @media only screen and (max-width: 640px) {
@@ -177,6 +198,13 @@
                 .header {
                     background-color: white;
                     border: 1px solid #ddd;
+                }
+
+                h2 {
+                    text-decoration: underline;
+                    background-color: white;
+                    margin-left: 0;
+                    padding: 0;
                 }
 
                 .name {
@@ -218,8 +246,8 @@
                     <li class='email'></li>
                     <li class='phone'></li>
                     <li class='address'></li>
-                    <li class='gh'></li>
                     <li class='li'></li>
+                    <li class='gh'></li>
                     <li class='so'></li>
                 </ul>
             </header>
