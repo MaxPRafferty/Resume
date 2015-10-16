@@ -1,7 +1,8 @@
  { "Max Rafferty": {
-    "Synopsis": "Language and stack agnostic software engineer, specializing in frontend technologies. Proven professional experience in front-end stack architecture, cutting-edge best-practice web development, mobile-first responsive UX, and developer advocacy and training",
+    "Headline": "Language agnostic full-stack software engineer",
+    "Synopsis": "Frontend technology specialist. Proven professional experience in frontend stack architecture, cutting-edge best-practice web development, mobile-first responsive UX, and developer advocacy and training",
     "Education": {
-        "Summer Coursework, Harvard University": "Studied Algorithms and Data Structures under Dr. Michael D. Mitzenmacher. Coursework completed 2008",
+        "Summer Coursework, Harvard University": "Studied Algorithms and Data Structures under Dr. Michael D. Mitzenmacher. Coursework completed 2008.",
         "Bachelor of Arts, College of Wooster": {
             "Major": "Computer Science",
             "Minor": "Studio Art",
@@ -14,31 +15,31 @@
     "Experience": {
         "Nomi": {
             "Position": "Engineer",
-            "Description": "Member of frontend engineering team responsible for stack architecture, program design, development, and maintenance of client-facing SAAS application interfaces. Personally worked to select and implement the frontend tech stack for a full, ground-up SPA in HTML5, SCSS, and ES2015 Javascript, with Unix and Node build tools. Select technologies include React, Flux, Babel, Mocha, and Gulp.",
+            "Description": "Member of frontend engineering team responsible for stack architecture, program design, development, and maintenance of client-facing SAAS application interfaces. Personally worked to select and implement the frontend tech stack for a full, ground-up SPA in HTML5, SCSS, and ES2015 Javascript, with Linux and Node build tools. Select technologies include React, Flux, Babel, Mocha, and Gulp.",
             "Dates": "April 2014 - October 2015",
             "Location": "New York, NY"
         },
         "NorthPoint Digital": {
             "Position": "Consultant",
-            "Description": "Stack agnostic web development and consultancy. Focus on direct client interaction and responsive, high-performance enterprise development. Technologies include Javascript, C#, PHP, Microsoft .NET, Apache, Solr, Drupal, Ektron, and Sitecore. Notable projects included sites for MIT Sloan Business School (mitsloan.mit.edu) and CHKD hospital (chkd.org).",
+            "Description": "Stack agnostic web development and consultancy. Focused on direct client interaction and responsive, high-performance enterprise development. Technologies included Javascript, C#, PHP, Microsoft .NET, Apache, Solr, Drupal, Ektron, and Sitecore. Notable projects included sites for MIT Sloan Business School (mitsloan.mit.edu) and Children's Hospital of the King's Daughters (chkd.org).",
             "Dates": "October 2012 - April 2014",
             "Location": "New York, NY"
         },
-        "Hearts on Fire": {
+        "Hearts On Fire": {
             "Position": "Engineer",
-            "Description": "C# + Sitecore development for HeartsOnFire.com. Responsibilities included AJAX forms, Sitecore Templates, Microsoft Dynamics and social network (Facebook et al.) integration, and migrated Visual Source Save store into SVN.",
+            "Description": "Sitecore development in C# for HeartsOnFire.com. Integrated AJAX forms, Sitecore templates, Microsoft Dynamics (CRM), and social network APIs (Facebook et al.), and migrated legacy Visual Source Save VCS instanc into SVN.",
             "Dates": "August 2012 - October 2012",
             "Location": "Boston, MA"
         },
         "Ektron, Inc.": {
             "Position": "Engineer",
-            "Description": "Responsible for full-stack implementation and maintenance of client sites built on Ektron CMS. Additionally, delivered  on-site and remote developer training sessions on Ektron's products and APIs. Technologies included C#, PHP, Javascript, and Ektron. Notable projects included Kodak.com and Covidien.com",
+            "Description": "Responsible for full-stack implementation and maintenance of client sites built on Ektron CMS. Additionally, delivered  on-site and remote developer training sessions on Ektron's products and APIs. Technologies included C#, PHP, Javascript, and Ektron. Notable projects included Kodak.com and Covidien.com.",
             "Dates": "February 2011 - August 2012",
             "Location": "Nashua, NH"
         },
         "River Cardroom": {
             "Position": "Poker Dealer",
-            "Description": "Dealt tournament and cash Texas Hold'em, as well as a variety of other table games. Additionally maintained cardroom website and weekly marketing email, and created media for mailers, pamphlets, and billboards",
+            "Description": "Dealt tournament and cash Texas Hold'em, as well as a variety of other casino table games. Additionally maintained cardroom website and weekly marketing email, and created media for mailers, pamphlets, and billboards.",
             "Dates": "May 2010 - February 2011",
             "Location": "Milford, NH"
         },
@@ -52,19 +53,19 @@
     "Contact": {
         "Email": "MaxPRafferty@gmail.com",
         "Phone": "617-480-3820",
-        "Address": "226 New York Ave., Apt 2, Brooklyn NY, 11216",
+        "Address": "226 New York Ave., Apt. 2, Brooklyn NY 11216",
         "Github": "https://github.com/MaxPRafferty",
         "Linkedin": "https://www.linkedin.com/in/maxprafferty",
         "StackOverflow": "http://stackoverflow.com/users/1612869/maxprafferty"
     },
     "Skills": {
-        "Environments": "Server administration in Windows and Unix. Comfortable in all desktop environments",
-        "Languages": "Master level Javascript (ES5, ES2015 (formerly ES6)). Professional experience in C#, Visual Basic, PHP, and Python. Hobby experience in C++, Lisp, Go, Ruby, and coffeescript. Educated in C, Java, and Basic",
-        "Tools": "Comfortable with standard Unix tools. Frontend Tools include Gulp, Grunt, Babel, SCSS, LESS, Browserify, Webpack, Google Closure, ESLint, Intern, Jest, Mocha, and  Chai, All via Node. Comfortable working in virtualized environments, and in Unix containers (Docker). Comfortable working within and configuring CI and build automation (circleCI, Jenkins, Solano, Travis)",
-        "VCS": "Strongly prefer Git and GitHub. Experience with SVN, Team Foundation, and VSS",
+        "Environments": "Server administration in Windows and **ix environments. Comfortable in all desktop environments.",
+        "Languages": "Master level Javascript (ES5, ES2015 (formerly ES6)). Professional experience in C#, Visual Basic, PHP, and Python. Hobby experience in C++, Lisp, Go, Ruby, and Coffeescript. Educated in C, Java, and Basic.",
+        "Tools": "Comfortable with standard *nix tools. Frontend tools include Gulp, Grunt, Babel, SCSS, LESS, Browserify, Webpack, Google Closure, ESLint, Intern, Jest, Mocha, and  Chai, all via Node. Comfortable working in virtualized environments and in UNIX containers (Docker). Comfortable working within and configuring CI and build automation (circleCI, Jenkins, Solano, Travis).",
+        "VCS": "Strongly prefer Git and GitHub. Experience with SVN, Team Foundation, and VSS.",
         "Frameworks": "Strongly prefer React. Professional experience with Angular, Durandal (Knokout), and Backbone. Eagerly await the day IE9 is no longer a requirement so that Polymer can be on this list.",
         "Libraries": "Strongly prefer Lodash (Underscore). Very familiar with JQuery (though you might not need it!). Comfortable with Bootstrap and Foundation.",
-        "Issue-Tracking": "Very comfortable in JIRA, and working with JIRA Agile tools. Experience with Pivotal, GitHub Issues, TFS, and Trello"
+        "Issue-Tracking": "Very comfortable in JIRA and working with JIRA Agile tools. Experience with Pivotal, GitHub Issues, TFS, and Trello."
 
     } 
  }}
