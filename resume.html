@@ -56,6 +56,7 @@
                 header.style.display = 'inline';
 
                 insertNode('name', 'Max P. Rafferty', header); //Come now, object keys is overkill
+                insertNode('headline', data.Headline, header);
                 insertNode('synopsis', data.Synopsis, header);
                 insertNode('email', data.Contact.Email, header);
                 insertNode('phone', data.Contact.Phone, header);
@@ -187,6 +188,10 @@
                 padding: 0px 15px 10px 15px;
                 background-color: #EEE9E9;
                 margin: -8px -7px 5px 10px;
+            }
+
+            .headline {
+                font-weight: 500;
             }
 
             .contact {
@@ -344,6 +349,7 @@
         <div class="sweater">
             <header class="header">
                 <h1 class="name"></h1>
+                <p class="headline"></p>
                 <p class="synopsis"></p>
                 <ul class="contact">
                     <li class='email'></li>

@@ -1,6 +1,6 @@
  { "Max Rafferty": {
     "Headline": "Language agnostic full-stack software engineer",
-    "Synopsis": "Frontend technology specialist. Proven professional experience in frontend stack architecture, cutting-edge best-practice web development, mobile-first responsive UX, and developer advocacy and training",
+    "Synopsis": "Frontend technology specialist. Proven professional experience in frontend stack architecture, cutting-edge best-practice web development, mobile-first responsive UX, and developer advocacy and training.",
     "Education": {
         "Summer Coursework, Harvard University": "Studied Algorithms and Data Structures under Dr. Michael D. Mitzenmacher. Coursework completed 2008.",
         "Bachelor of Arts, College of Wooster": {
@@ -27,7 +27,7 @@
         },
         "Hearts On Fire": {
             "Position": "Engineer",
-            "Description": "Sitecore development in C# for HeartsOnFire.com. Integrated AJAX forms, Sitecore templates, Microsoft Dynamics (CRM), and social network APIs (Facebook et al.), and migrated legacy Visual Source Save VCS instanc into SVN.",
+            "Description": "Sitecore development in C# for HeartsOnFire.com. Integrated AJAX forms, Sitecore templates, Microsoft Dynamics (CRM), and social network APIs (Facebook et al.), and migrated legacy Visual Source Save VCS instance into SVN.",
             "Dates": "August 2012 - October 2012",
             "Location": "Boston, MA"
         },
@@ -60,10 +60,10 @@
     },
     "Skills": {
         "Environments": "Server administration in Windows and **ix environments. Comfortable in all desktop environments.",
-        "Languages": "Master level Javascript (ES5, ES2015 (formerly ES6)). Professional experience in C#, Visual Basic, PHP, and Python. Hobby experience in C++, Lisp, Go, Ruby, and Coffeescript. Educated in C, Java, and Basic.",
+        "Languages": "Master level Javascript (ES5, ES2015 (formerly ES6)). Professional experience in C#, Visual Basic, PHP, and Python. Educated in C, C++ and Java.",
         "Tools": "Comfortable with standard *nix tools. Frontend tools include Gulp, Grunt, Babel, SCSS, LESS, Browserify, Webpack, Google Closure, ESLint, Intern, Jest, Mocha, and  Chai, all via Node. Comfortable working in virtualized environments and in UNIX containers (Docker). Comfortable working within and configuring CI and build automation (circleCI, Jenkins, Solano, Travis).",
         "VCS": "Strongly prefer Git and GitHub. Experience with SVN, Team Foundation, and VSS.",
-        "Frameworks": "Strongly prefer React. Professional experience with Angular, Durandal (Knokout), and Backbone. Eagerly await the day IE9 is no longer a requirement so that Polymer can be on this list.",
+        "Frameworks": "Strongly prefer React. Professional experience with Angular, Durandal (Knockout), and Backbone. Eagerly await the day IE9 is no longer a requirement so that Polymer can be on this list.",
         "Libraries": "Strongly prefer Lodash (Underscore). Very familiar with JQuery (though you might not need it!). Comfortable with Bootstrap and Foundation.",
         "Issue-Tracking": "Very comfortable in JIRA and working with JIRA Agile tools. Experience with Pivotal, GitHub Issues, TFS, and Trello."
 
