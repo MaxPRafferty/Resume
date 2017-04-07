@@ -39,7 +39,7 @@
         },
         "Hearts On Fire": {
             "Position": "Engineer",
-            "Description": "Sitecore development in C# for HeartsOnFire.com. Integrated AJAX forms, Sitecore templates, Microsoft Dynamics (CRM), and social network APIs (Facebook et al.), and migrated legacy Visual Source Save VCS instance into SVN.",
+            "Description": "Sitecore development in C#",
             "Dates": "August 2012 - October 2012",
             "Location": "Boston, MA"
         },
@@ -51,13 +51,13 @@
         },
         "River Cardroom": {
             "Position": "Poker Dealer",
-            "Description": "Dealt tournament and cash Texas Hold'em, as well as a variety of other casino table games. Additionally maintained cardroom website and weekly marketing email, and created media for mailers, pamphlets, and billboards.",
+            "Description": "",
             "Dates": "May 2010 - February 2011",
             "Location": "Milford, NH"
         },
         "College of Wooster": {
             "Position": "Web Manager",
-            "Description": "Oversaw student content assistant team responsible for migrating existing static HTML site into Sitecore CMS.",
+            "Description": "Oversaw migration team responsible for migrating static HTML site into Sitecore CMS.",
             "Dates": "November 2007 - May 2010",
             "Location": "Wooster, OH"
         }
@@ -65,7 +65,7 @@
     "Contact": {
         "Email": "MaxPRafferty@gmail.com",
         "Phone": "617-480-3820",
-        "Address": "226 New York Ave., Apt. 2, Brooklyn NY 11216",
+        "Address": "372 Montgomery St #2, Brooklyn NY, 11225",
         "Github": "https://github.com/MaxPRafferty",
         "Linkedin": "https://www.linkedin.com/in/maxprafferty",
         "StackOverflow": "http://stackoverflow.com/users/1612869/maxprafferty"
