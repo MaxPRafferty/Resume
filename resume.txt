@@ -1,6 +1,6 @@
  { "Max Rafferty": {
-    "Headline": "Language agnostic full-stack software engineer",
-    "Synopsis": "Frontend technology specialist. Proven professional experience in frontend stack architecture, cutting-edge best-practice web development, mobile-first responsive UX, and developer advocacy and training.",
+    "Headline": "Language agnostic Full Stack Software Engineer",
+    "Synopsis": "Frontend specialist with a decade of best-practice Web Dev and Leadership. Proven professional experience in frontend development and architecture, mobile-first responsive UX, and developer advocacy and training.",
     "Education": {
         "Summer Coursework, Harvard University": "Studied Algorithms and Data Structures under Dr. Michael D. Mitzenmacher. Coursework completed 2008.",
         "Bachelor of Arts, College of Wooster": {
@@ -13,6 +13,18 @@
         "M. Rafferty and S. Visa, BitTorrent-Enhanced Distributed Internet Caching (BEDIC) in Proceedings of the 2010 Midstates Conference for Undergraduate Research in Computer Science and Mathematics, Springfield, 2010, pp 49-57."
     ],
     "Experience": {
+        "Change My World Now ": {
+            "Position": "Head of Development",
+            "Description": "Directly responsible for all day-to-day technical and engineering operations. Ultimately responsible for selection of technologies and tooling. Responsible for engineering hiring. Ran successful internship program for five development interns.",
+            "Dates": "February 2017 - April 2017",
+            "Location": "New York, NY"
+        },
+        "Change My World Now": {
+            "Position": "Lead Front End Engineer",
+            "Description": "Second Engineer. Built out CMWN platform frontend SPA from scratch, as well as in-house games framework, several dozen games, and supporting microservices. Built out AWS infrastructure and CI systems. Select tech includes React, Redux, AWS (EC2, S3, Dynamo), and Node.",
+            "Dates": "October 2015 - February 2017",
+            "Location": "New York, NY"
+        },
         "Nomi": {
             "Position": "Engineer",
             "Description": "Member of frontend engineering team responsible for stack architecture, program design, development, and maintenance of client-facing SAAS application interfaces. Personally worked to select and implement the frontend tech stack for a full, ground-up SPA in HTML5, SCSS, and ES2015 Javascript, with Linux and Node build tools. Select technologies include React, Flux, Babel, Mocha, and Gulp.",
@@ -61,11 +73,12 @@
     "Skills": {
         "Environments": "Server administration in Windows and **ix environments. Comfortable in all desktop environments.",
         "Languages": "Master level Javascript (ES5, ES2015 (formerly ES6)). Professional experience in C#, Visual Basic, PHP, and Python. Educated in C, C++ and Java.",
-        "Tools": "Comfortable with standard *nix tools. Frontend tools include Gulp, Grunt, Babel, SCSS, LESS, Browserify, Webpack, Google Closure, ESLint, Intern, Jest, Mocha, and  Chai, all via Node. Comfortable working in virtualized environments and in UNIX containers (Docker). Comfortable working within and configuring CI and build automation (circleCI, Jenkins, Solano, Travis).",
-        "VCS": "Strongly prefer Git and GitHub. Experience with SVN, Team Foundation, and VSS.",
-        "Frameworks": "Strongly prefer React. Professional experience with Angular, Durandal (Knockout), and Backbone. Eagerly await the day IE9 is no longer a requirement so that Polymer can be on this list.",
+        "Tools": "Comfortable with standard *nix tools. Frontend tools include Gulp, Grunt, Babel, SCSS, LESS, Browserify, Webpack, Google Closure, ESLint, Intern, Jest, Mocha, and  Chai, all via Node. Comfortable working in virtualized environments and in UNIX containers (Docker). Comfortable working within and configuring CI and build automation (Wercker, Jenkins, Solano, Travis). Comfortable with AWS tools.",
+        "VCS": "Strongly prefer Git. Experience with SVN, Team Foundation, and VSS.",
+        "Frameworks": "Strongly prefer React. Professional experience with Angular, Durandal (Knockout), and Backbone.",
         "Libraries": "Strongly prefer Lodash (Underscore). Very familiar with JQuery (though you might not need it!). Comfortable with Bootstrap and Foundation.",
         "Issue-Tracking": "Very comfortable in JIRA and working with JIRA Agile tools. Experience with Pivotal, GitHub Issues, TFS, and Trello."
 
-    } 
+    }
  }}
+
