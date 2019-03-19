@@ -13,6 +13,12 @@
         "M. Rafferty and S. Visa, BitTorrent-Enhanced Distributed Internet Caching (BEDIC) in Proceedings of the 2010 Midstates Conference for Undergraduate Research in Computer Science and Mathematics, Springfield, 2010, pp 49-57."
     ],
     "Experience": {
+        "Bread Finance": {
+            "Position": "Head of Front End",
+            "Description": "Responsible for architecture of all Bread frontend applications. Resposibilities included ultimate responsiblitiy for all front end deployment, code quality, and all levels of testing.",
+            "Dates": "May 2017 - Present",
+            "Location": "New York, NY"
+        },
         "Change My World Now ": {
             "Position": "Head of Development",
             "Description": "Directly responsible for all day-to-day technical and engineering operations. Ultimately responsible for selection of technologies and tooling. Responsible for engineering hiring. Ran successful internship program for five development interns.",
